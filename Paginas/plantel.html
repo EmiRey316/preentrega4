@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página con el Roster del equipo Pittsburgh Steelers en el 2021">
+    <meta name="keywords" content="Steelers, Pittsburgh Steelers, NFL, Roster Steelers 2021">
+    <meta name="author" content="Emiliano Rey">
+    <title>Plantel</title>
+
+    <!--Link a Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--Estilo general del sitio-->
+    <link rel="stylesheet" href="../CSS/estilo.css">
+
+    <!--Animaciones de animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!--Fonts de Google, Roboto para el texto general y Mate para la mayoría de títulos-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="container-fluid">
+        <!--Inicio de navbar de Bootstrap-->
+        <!--Debo dejar el navbar-light, de otra forma el button no queda visible-->
+        <nav class="navbar navbar-expand-lg container-fluid navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../Imagenes/homeLogo.png" alt="Steelers Logo" class="menuLogo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav row" style="width: 50%;">
+                        <li class="nav-item col-3">
+                            <a class="nav-link" href="../Paginas/plantel.html">Plantel</a>
+                        </li>
+                        <li class="nav-item col-3">
+                            <a class="nav-link" href="../Paginas/polamalu.html">Polamalu</a>
+                        </li>
+                        <li class="nav-item col-3">
+                            <a class="nav-link" href="../Paginas/galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item col-3">
+                            <a class="nav-link" href="../Paginas/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Inicio de navbar de Bootstrap-->
+    </header>
+
+    <main id="plantelMain">
+        <h1 class="mainTitulo">Plantel 2021</h1>
+        
+        <!--Contenedor de Bootstrap para hacer la tabla responsive-->
+        <div class="container">
+            <!--Tabla que registra los jugadores que forman la ofensiva de los Steelers-->
+            <table class="tablaPlantel">
+                <caption>Ofensiva</caption>
+                <tr>
+                    <th>Posición</th>
+                    <th>Inicial</th>
+                    <th>Segundo</th>
+                    <th>Tercero+</th>
+                </tr>
+                <tr>
+                    <td>Quarterback</td>
+                    <td>Ben Roethlisberger</td>
+                    <td>Mason Rudolph</td>
+                    <td>Dwayne Haskins<br>
+                        Joshua Dobbs</td>
+                </tr>
+                <tr>
+                    <td>Running Back</td>
+                    <td>Najee Harris</td>
+                    <td>Benny Snell</td>
+                    <td>Anthony McFarland<br>
+                        Kalen Ballage</td>
+                </tr>  
+                <tr>
+                    <td>Fullback</td>
+                    <td>Derek Watt</td>
+                    <td>Jaylen Samuels</td>
+                    <td>Trey Edmunds</td>
+                </tr>
+                <tr>
+                    <td>Wide Receiver</td>
+                    <td>JuJu Smith-Schuster</td>
+                    <td>Ray-Ray McCloud</td>
+                    <td>Cody White<br>
+                        Mathew Sexton</td>
+                </tr>
+                <tr>
+                    <td>Wide Receiver</td>
+                    <td>Chase Claypool</td>
+                    <td>James Washington</td>
+                    <td>Anthony Johnson<br>
+                        Tyler Simmons</td>
+                </tr>
+                <tr>
+                    <td>Wide Receiver</td>
+                    <td>Diontae Johnson</td>
+                    <td>Isaiah McKoy</td>
+                    <td>Rico Bussey</td>
+                </tr>
+                <tr>
+                    <td>Tight End</td>
+                    <td>Eric Ebron</td>
+                    <td>Pat Freiermuth</td>
+                    <td>Zach Gentry<br>
+                        Kevin Rader<br>
+                        Dax Raymond</td>
+                    </tr>
+                    <tr>
+                        <td>Left Tackle</td>
+                        <td>Chukwuma Okorafor</td>
+                        <td>Jarron Jones</td>
+                        <td>Dan Moore Jr.</td>
+                    </tr>
+                    <tr>
+                        <td>Left Guard</td>
+                        <td>Kevin Dotson</td>
+                        <td>Brandon Walton</td>
+                        <td>--</td>
+                    </tr>
+                <tr>
+                    <td>Center</td>
+                    <td>J.C. Hassenauer</td>
+                    <td>B.J. Finney</td>
+                    <td>Kendrick Green</td>
+                </tr>
+                <tr>
+                    <td>Right Guard</td>
+                    <td>David DeCastro</td>
+                    <td>Aviante Collins</td>
+                    <td>Rashaad Coward</td>
+                </tr>
+                <tr>
+                    <td>Right Tackle</td>
+                    <td>Zach Banner</td>
+                    <td>Joe Haeg</td>
+                    <td>Anthony Coyle</td>
+                </tr>
+            </table>
+        </div>
+
+        <!--Contenedor de Bootstrap para hacer la tabla responsive-->
+        <div class="container">
+            <!--Tabla que registra los jugadores que forman la defensiva de los Steelers-->
+            <table class="tablaPlantel">
+                <caption>Defensiva</caption>
+                <tr>
+                    <th>Posición</th>
+                    <th>Inicial</th>
+                    <th>Segundo</th>
+                    <th>Tercero+</th>
+                </tr>
+                <tr>
+                    <td>Defensive Tackle</td>
+                    <td>Cameron Heyward</td>
+                    <td>Carlos Davis</td>
+                    <td>Chris Wormley<br>
+                        T.J. Carter<br>
+                        Abdullah Anderson</td>
+                </tr>
+                <tr>
+                    <td>Nose Tackle</td>
+                    <td>Tyson Alualu</td>
+                    <td>Isaiah Buggs</td>
+                    <td>Demarcus Christmas</td>
+                </tr>
+                <tr>
+                    <td>Defensive End</td>
+                    <td>Stephon Tuitt</td>
+                    <td>Henry Mondeaux</td>
+                    <td>Isaiahh Loudermilk<br>
+                        Calvin Taylor<br>
+                        Jamir Jones</td>
+                </tr>
+                <tr>
+                    <td>Left Inside Linebacker</td>
+                    <td>Devin Bush</td>
+                    <td>Robert Spillane</td>
+                    <td>Buddy Johnson<br>
+                        Tegray Scales</td>
+                </tr>
+                <tr>
+                    <td>Right Inside Linebacker</td>
+                    <td>Vince Williams</td>
+                    <td>Marcus Allen</td>
+                    <td>Ulysees Gilbert<br>
+                        Jarvis Miller</td>
+                </tr>
+                <tr>
+                    <td>Left Outside Linebacker</td>
+                    <td>T.J. Watt</td>
+                    <td>Cassius Marsh</td>
+                    <td>Christian Kuntz<br>
+                        Jamar Watson</td>
+                </tr>
+                <tr>
+                    <td>Right Outside Linebacker</td>
+                    <td>Alex Highsmith</td>
+                    <td>Quincy Roche</td>
+                    <td>Calvin Bundage</td>
+                </tr>
+                <tr>
+                    <td>Right Cornerback</td>
+                    <td>Justin Layne</td>
+                    <td>Arthur Maulet</td>
+                    <td>Stephen Denmark<br>
+                        Shakur Brown</td>
+                </tr>
+                <tr>
+                    <td>Left Cornerback</td>
+                    <td>Joe Haden</td>
+                    <td>James Pierre</td>
+                    <td>DeMarkus Acy<br>
+                        Mark Gilbert</td>
+                </tr>
+                <tr>
+                    <td>Strong Safety</td>
+                    <td>Terrell Edmunds</td>
+                    <td>Miles Killebrew</td>
+                    <td>Donovan Stiner</td>
+                </tr>
+                <tr>
+                    <td>Free Safety</td>
+                    <td>Minkah Fitzpatrick</td>
+                    <td>Antoine Brooks Jr.</td>
+                    <td>Tre Norwood<br>
+                        Lamont Wade</td>
+                </tr>
+            </table>
+        </div>
+
+        <!--Contenedor de Bootstrap para hacer la tabla responsive-->
+        <div class="container">
+        <!--Tabla que registra los jugadores que forman los equipos especiales de los Steelers-->
+            <table class="tablaPlantel">
+                <caption>Equipos Especiales</caption>
+                <tr>
+                    <th>Posición</th>
+                    <th>Inicial</th>
+                    <th>Segundo</th>
+                    <th>Tercero+</th>
+                </tr>
+                <tr>
+                    <td>Punter</td>
+                    <td>Jordan Berry</td>
+                    <td>Pressley Harvin III</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td>Kicker</td>
+                    <td>Chris Boswell</td>
+                    <td>--</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td>Long Snapper</td>
+                    <td>Kameron Canaday</td>
+                    <td>--</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td>Holder</td>
+                    <td>Jordan Berry</td>
+                    <td>--</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td>Punt Returner</td>
+                    <td>Diontae Johnson</td>
+                    <td>Ray-Ray McCloud</td>
+                    <td>James Pierre</td>
+                </tr>
+                <tr>
+                    <td>Kick Returner</td>
+                    <td>Anthony McFarland</td>
+                    <td>Ray-Ray McCloud</td>
+                    <td>James Pierre</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerContactos">
+            <!--Contenedor para información de contacto-->
+            <h2>Información</h2>
+            <!--Listado con los contactos-->
+            <ul class="contactosListado">
+                <li>Dirección: Calle 111</li>
+                <li>Teléfono: 99999999</li>
+                <li>Mail: contacto@mail.com</li>
+            </ul>
+        </div>
+        <div class="footerRedes">
+            <!--Contenedor para Redes Sociales, con con logo y enlaces a las redes oficiales-->
+            <a href="https://www.instagram.com/steelers/">
+                <img src="../Imagenes/instagramLogo.png" alt="Logo de Instagram" class="footerRedesImg">
+            </a>
+            <a href="https://twitter.com/steelers?lang=es">
+                <img src="../Imagenes/twitterLogo.png" alt="Logo de Twitter" class="footerRedesImg">
+            </a>
+            <a href="https://www.facebook.com/steelers/">
+                <img src="../Imagenes/facebookLogo.png" alt="Logo de Facebook" class="footerRedesImg">
+            </a>
+        </div>
+    </footer>
+
+    <!--Scrip de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

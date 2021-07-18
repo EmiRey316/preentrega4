@@ -1,0 +1,48 @@
+/*Estilos particulares para la página "home"*/
+#homeMain {
+    margin-right: 50px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 50px 250px;
+    grid-template-areas: "Titulo Imagen"
+                        "Parrafo Imagen";
+    column-gap: 20px;
+    align-items: center;
+
+    .mainTitulo {
+        grid-area: Titulo;
+    }
+}
+
+.homeMainText {
+    grid-area: Parrafo;
+}
+
+/*Contener donde se ubica la Imagen principal del Home*/
+.homeMainImg {
+    grid-area: Imagen;
+}
+
+/*Estilo a la imagen principal en Home*/
+#imagenPresentacion {
+    animation: fadeInFromBottom;
+    animation-duration: 1.5s;
+}
+
+@keyframes fadeInFromBottom {
+    from {transform: translateY(50%);
+            opacity: 0%;}
+}
+
+@media screen and (max-width: 600px) {
+    #homeMain {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 5%;
+        align-self: center;
+
+        .homeMainText {
+            order: 2;
+        }
+    }
+}

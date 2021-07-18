@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto del sitio, con info de contacto">
+    <meta name="keywords" content="Steelers, Pittsburgh Steelers, NFL">
+    <meta name="author" content="Emiliano Rey">
+    <title>Contacto</title>
+
+    <!--Link a Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--Estilo general del sitio-->
+    <link rel="stylesheet" href="../CSS/estilo.css">
+
+    <!--Animaciones de animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!--Fonts de Google, Roboto para el texto general y Mate para la mayoría de títulos-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="container-fluid">
+        <!--Inicio de navbar de Bootstrap-->
+        <!--Debo dejar el navbar-light, de otra forma el button no queda visible-->
+        <nav class="navbar navbar-expand-lg container-fluid navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../Imagenes/homeLogo.png" alt="Steelers Logo" class="menuLogo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav row" style="width: 50%;">
+                        <li class="nav-item col-3">
+                            <a class="nav-link" href="../Paginas/plantel.html">Plantel</a>
+                        </li>
+                        <li class="nav-item col-3">
+                            <a class="nav-link" href="../Paginas/polamalu.html">Polamalu</a>
+                        </li>
+                        <li class="nav-item col-3">
+                            <a class="nav-link" href="../Paginas/galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item col-3">
+                            <a class="nav-link" href="../Paginas/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Inicio de navbar de Bootstrap-->
+    </header>
+
+    <main id="contactoMain">
+        <section>
+            <h1 class="mainTitulo">Formulario de Contacto</h1>
+            <p>Cuéntanos cómo podemos ayudarte.</p>
+        </section>
+        <!--Form con las clases form-label y form-control de Bootstrap-->
+        <form action="">
+            <label for="nombre_apellido" class="form-label">Nombre y Apellido: </label>
+            <input type="text" id="nombre_apellido" name="nombre_apellido" class="form-control" placeholder="Nombre y Apellido">
+
+            <label for="email" class="form-label">Email: </label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="nombre@ejemplo.com">
+
+            <div class="form-check form-switch">
+                <input type="checkbox" id="tyc" class="form-check-input" checked>
+                <label for="tyc" class="form-label"> Acepto los Términos y Condiciones</label>
+            </div>
+            <br>
+
+            <label for="comentario" class="form-label">Comentario: </label>
+            <textarea id="comentario" name="comentario" cols="30" rows="7" class="form-control" placeholder="Deje su comentario aquí"></textarea>
+            <br>
+            <br>
+            
+            <input type="reset" value="Limpiar formulario" id="formResetear" class="btn btn-light">
+            <input type="submit" value="Enviar formulario" id="formEnviar" class="btn btn-dark">
+        </form>
+    </main>
+
+    <footer>
+        <div class="footerContactos">
+            <!--Contenedor para información de contacto-->
+            <h2>Información</h2>
+            <!--Listado con los contactos-->
+            <ul class="contactosListado">
+                <li>Dirección: Calle 111</li>
+                <li>Teléfono: 99999999</li>
+                <li>Mail: contacto@mail.com</li>
+            </ul>
+        </div>
+        <div class="footerRedes">
+            <!--Contenedor para Redes Sociales, con con logo y enlaces a las redes oficiales-->
+            <a href="https://www.instagram.com/steelers/">
+                <img src="../Imagenes/instagramLogo.png" alt="Logo de Instagram" class="footerRedesImg">
+            </a>
+            <a href="https://twitter.com/steelers?lang=es">
+                <img src="../Imagenes/twitterLogo.png" alt="Logo de Twitter" class="footerRedesImg">
+            </a>
+            <a href="https://www.facebook.com/steelers/">
+                <img src="../Imagenes/facebookLogo.png" alt="Logo de Facebook" class="footerRedesImg">
+            </a>
+        </div>
+    </footer>
+
+    <!--Scrip de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

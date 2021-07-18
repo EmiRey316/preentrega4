@@ -1,0 +1,57 @@
+/*Estilos para el footer del sitio*/
+footer {
+    background: linear-gradient($negro, lighten($negro, 10%));
+    color: lightgrey;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerContactos {
+    width: 30%;
+    margin-left: 3%;
+
+    /*Estilo para el título del contenedor de contactos*/
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 4% 0px;
+    }
+}
+
+/*Estilo del contenedor con las redes*/
+.footerRedes {
+    margin-right: 30px;
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+}
+
+.footerRedesImg {
+    width: 36px;
+    height: auto;
+}
+
+/*Clase para dar estilo al listado de contactos*/
+.contactosListado {
+    font-style: italic;
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .footerContactos, .footerRedes {
+        width: 80%;
+        text-align: center;
+        margin: 0px 0px 25px 0px;
+    }
+
+    .contactosListado {
+        padding: 0px;
+    }
+}

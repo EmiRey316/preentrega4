@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página con imágenes y videos del equipo Pittsburgh Steelers">
+    <meta name="keywords" content="Steelers, Pittsburgh Steelers, NFL, Fotos Steelers">
+    <meta name="author" content="Emiliano Rey">
+    <title>Galería</title>
+
+    <!--Link a Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--Estilo general del sitio-->
+    <link rel="stylesheet" href="../CSS/estilo.css">
+
+    <!--Animaciones de animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!--Fonts de Google, Roboto para el texto general y Mate para la mayoría de títulos-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="container-fluid">
+        <!--Inicio de navbar de Bootstrap-->
+        <!--Debo dejar el navbar-light, de otra forma el button no queda visible-->
+        <nav class="navbar navbar-expand-lg container-fluid navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../Imagenes/homeLogo.png" alt="Steelers Logo" class="menuLogo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav row" style="width: 50%;">
+                        <li class="nav-item col-3">
+                            <a class="nav-link" href="../Paginas/plantel.html">Plantel</a>
+                        </li>
+                        <li class="nav-item col-3">
+                            <a class="nav-link" href="../Paginas/polamalu.html">Polamalu</a>
+                        </li>
+                        <li class="nav-item col-3">
+                            <a class="nav-link" href="../Paginas/galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item col-3">
+                            <a class="nav-link" href="../Paginas/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Inicio de navbar de Bootstrap-->
+    </header>
+
+    <main id="galeriaMain">
+        <div class="galeriaImagenes">
+            <!--Contenedor con imágenes de los Steelers. Con Zoom al clickear, hecho con modal de Bootstrap. También tienen la class img-fluid de BS para hacerlas responsive-->
+            <h1 class="mainTitulo">Imágenes</h1>
+            <img src="../Imagenes/casco.jpg" alt="Casco Steelers en estadio" class="imgPequeñaGalería img-fluid" data-bs-toggle="modal" data-bs-target="#modalCasco">
+            <div class="modal fade" id="modalCasco" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <img src="../Imagenes/casco.jpg" alt="Casco Steelers en estadio">
+                    </div>
+                </div>
+            </div>
+
+            <img src="../Imagenes/equipo.jpg" alt="Equipo saliendo a la cancha" class="imgPequeñaGalería img-fluid" data-bs-toggle="modal" data-bs-target="#modalEquipo">
+            <div class="modal fade" id="modalEquipo" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <img src="../Imagenes/equipo.jpg" alt="Equipo saliendo a la cancha">
+                    </div>
+                </div>
+            </div>
+
+            <img src="../Imagenes/TJWatt.jpg" alt="T. J. Watt festejando" class="imgPequeñaGalería img-fluid" data-bs-toggle="modal" data-bs-target="#modalTJWatt">
+            <div class="modal fade" id="modalTJWatt" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <img src="../Imagenes/TJWatt.jpg" alt="T. J. Watt festejando">
+                    </div>
+                </div>
+            </div>
+
+            <img src="../Imagenes/tackle.jpg" alt="Tacle de varios jugadores" class="imgPequeñaGalería img-fluid" data-bs-toggle="modal" data-bs-target="#modalTackle">
+            <div class="modal fade" id="modalTackle" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <img src="../Imagenes/tackle.jpg" alt="Tacle de varios jugadores">
+                    </div>
+                </div>
+            </div>
+
+            <img src="../Imagenes/recepcionAlta.jpg" alt="Recepción saltando" class="imgPequeñaGalería img-fluid" data-bs-toggle="modal" data-bs-target="#modalRecepcion">
+            <div class="modal fade" id="modalRecepcion" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <img src="../Imagenes/recepcionAlta.jpg" alt="Recepción saltando">
+                    </div>
+                </div>
+            </div>
+
+            <img src="../Imagenes/heywardBloqueo.jpg" alt="Cameron Heyward Bloqueando" class="imgPequeñaGalería img-fluid" data-bs-toggle="modal" data-bs-target="#modalBloqueo">
+            <div class="modal fade" id="modalBloqueo" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <img src="../Imagenes/heywardBloqueo.jpg" alt="Cameron Heyward Bloqueando">
+                    </div>
+                </div>
+            </div>
+
+            <img src="../Imagenes/mikeTomlin.jpg" alt="Head Coach Mike Tomlin" class="imgPequeñaGalería img-fluid" data-bs-toggle="modal" data-bs-target="#modalMike">
+            <div class="modal fade" id="modalMike" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <img src="../Imagenes/mikeTomlin.jpg" alt="Head Coach Mike Tomlin">
+                    </div>
+                </div>
+            </div>
+
+            <img src="../Imagenes/jugadorCaminando.jpg" alt="Jugador de espalda" class="imgPequeñaGalería img-fluid" data-bs-toggle="modal" data-bs-target="#modalJugador">
+            <div class="modal fade" id="modalJugador" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <img src="../Imagenes/jugadorCaminando.jpg" alt="Jugador de espalda">
+                    </div>
+                </div>
+            </div>
+            <!--Fin de modals de Bootstrap-->
+        </div>
+
+        <!-- Contenedor con videos de los Steelers, con class img-fluid para hacerlos responive-->
+        <div class="galeriaVideos">
+            <h1 class="mainTitulo">Videos</h1>
+            <div class="fluid ratio ratio-16x9">
+                <iframe width="560" height="auto" src="https://www.youtube.com/embed/uH-Qr_f8ZuM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="fluid ratio ratio-16x9">
+                <iframe width="560" height="auto" src="https://www.youtube.com/embed/VO5A0VS06TA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="fluid ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/rzcuDYnOjpQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerContactos">
+            <!--Contenedor para información de contacto-->
+            <h2>Información</h2>
+            <!--Listado con los contactos-->
+            <ul class="contactosListado">
+                <li>Dirección: Calle 111</li>
+                <li>Teléfono: 99999999</li>
+                <li>Mail: contacto@mail.com</li>
+            </ul>
+        </div>
+        <div class="footerRedes">
+            <!--Contenedor para Redes Sociales, con con logo y enlaces a las redes oficiales-->
+            <a href="https://www.instagram.com/steelers/">
+                <img src="../Imagenes/instagramLogo.png" alt="Logo de Instagram" class="footerRedesImg">
+            </a>
+            <a href="https://twitter.com/steelers?lang=es">
+                <img src="../Imagenes/twitterLogo.png" alt="Logo de Twitter" class="footerRedesImg">
+            </a>
+            <a href="https://www.facebook.com/steelers/">
+                <img src="../Imagenes/facebookLogo.png" alt="Logo de Facebook" class="footerRedesImg">
+            </a>
+        </div>
+    </footer>
+
+    <!--Scrip de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

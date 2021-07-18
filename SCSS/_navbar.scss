@@ -1,0 +1,57 @@
+/*Estilos para el menú superior o navegador del sitio*/
+header {
+    background: linear-gradient(0deg, $negro 0%, $amarillo 20%);
+    margin-bottom: 50px;
+}
+
+/*Estilo del navegador del menú superior*/
+.navbar {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Contenedor con el logo*/
+.navbar-brand {
+    margin-left: 25px;
+    padding: 0px;
+}
+
+.navbar-nav, .navbar-toggler {
+    margin-right: 4%;
+}
+
+#navbarNav {
+    margin-left: 10%;
+}
+
+/*Clase para dar estilo a la imagen que sirve como logo en el Menú*/
+.menuLogo {
+    width: 230px;
+    height: auto;
+    vertical-align: middle;
+}
+
+/*Estilo para los enlaces a las distintas páginas del sitio, en el navegador*/
+.nav-link {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    /*!important para matar el estilo traido por Bootstrap*/
+    color: $negro !important;
+    padding: 3px 0px;
+    font-weight: bold;
+}
+
+/*Estilo para los enlaces a las distintas páginas del sitio, en el navegador*/
+.nav-link:hover {
+    /*!important para matar el estilo anterior*/
+    color: $gris !important;
+    border-bottom: $gris 1px solid;
+    transition: 0.3s;
+}
+
+/*Estilo para los li del navegador*/
+.nav-item {
+    text-align: center;
+    padding: 0px;
+    margin: 10px 0px;
+}

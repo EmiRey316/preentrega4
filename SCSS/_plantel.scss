@@ -1,0 +1,68 @@
+/*Estilos particulares para la página "Plantel"*/
+
+@mixin textoTabla($fontSize, $topBottom, $leftRight) {
+    font-size: $fontSize;
+    padding: $topBottom $leftRight;
+}
+
+.tablaPlantel {
+    color: $negro;
+    width: 80%;
+    border-collapse: collapse;
+    border: $negro solid 1.5px;
+    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    caption-side: top;
+
+    /*Estilo para dar el formato de "zebra" a la tabla*/
+    tr:nth-child(odd) {
+        background-color: rgb(231, 231, 231);
+    }
+
+    th {
+        @include textoTabla(20px, 8px, 20px);
+        width: 25%;
+        text-align: left;
+    }
+
+    td {
+        @include textoTabla(16px, 8px, 20px);
+        width: 25%;
+    }
+
+    /*Estilo para la primer columna de cada tabla*/
+    td:first-child, th:first-child {
+        font-weight: bold;
+        border-right: $negro solid 0.5px;
+    }
+
+    /*Estilo para el título de cada tabla*/
+    caption {
+        color: $negro;
+        border: $negro solid 2px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom: none;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: left;
+        padding: 8px 0px 8px 45px;
+        background-color: $amarillo;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .tablaPlantel {
+        width: 100%;
+
+        th {
+            @include textoTabla(14px, 4px, 10px);
+        }
+
+        td {
+            @include textoTabla(11px, 4px, 10px);
+        }
+    }
+}

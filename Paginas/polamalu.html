@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página en homenaje al jugador Troy Polamalu">
+    <meta name="keywords" content="Steelers, Pittsburgh Steelers, NFL, Polamalu, Troy Polamalu">
+    <meta name="author" content="Emiliano Rey">
+    <title>Polamalu</title>
+
+    <!--Link a Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--Estilo general del sitio-->
+    <link rel="stylesheet" href="../CSS/estilo.css">
+
+    <!--Animaciones de animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!--Fonts de Google, Roboto para el texto general y Mate para la mayoría de títulos-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="container-fluid">
+        <!--Inicio de navbar de Bootstrap-->
+        <!--Debo dejar el navbar-light, de otra forma el button no queda visible-->
+        <nav class="navbar navbar-expand-lg container-fluid navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../Imagenes/homeLogo.png" alt="Steelers Logo" class="menuLogo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav row" style="width: 50%;">
+                        <li class="nav-item col-3">
+                            <a class="nav-link" href="../Paginas/plantel.html">Plantel</a>
+                        </li>
+                        <li class="nav-item col-3">
+                            <a class="nav-link" href="../Paginas/polamalu.html">Polamalu</a>
+                        </li>
+                        <li class="nav-item col-3">
+                            <a class="nav-link" href="../Paginas/galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item col-3">
+                            <a class="nav-link" href="../Paginas/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Inicio de navbar de Bootstrap-->
+    </header>
+
+    <main id="polamaluMain">
+        <h1 class="mainTitulo">Troy Polamalu</h1>
+        <!--Inicio de carrusel de Bootstrap, con indicadores y botones para cambiar entre fotos-->
+        <div id="polamaluMainCarrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <!--div para indicadores del carrusel-->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#polamaluMainCarrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#polamaluMainCarrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#polamaluMainCarrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../Imagenes/PolamaluCarrusel1.jpg" alt="Troy Polamalu posando con balón" class="d-block w-100 img-fluid">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/PolamaluCarrusel2.jpg" alt="Polamalu corriendo con balón" class="d-block w-100 img-fluid">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/PolamaluCarrusel3.jpg" alt="Polamalu saliendo de vestuario" class="d-block w-100 img-fluid">
+                </div>
+            </div>
+            <!--Bottón para cambiar a imagen anterior-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#polamaluMainCarrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <!--Bottón para cambiar a imagen siguiente-->
+            <button class="carousel-control-next" type="button" data-bs-target="#polamaluMainCarrusel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+        <div id="polamaluPrimerTexto">
+            <!--Texto principal de biografía de Troy Polamalu-->
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum sed eius saepe, deserunt dignissimos distinctio ducimus laudantium aliquam vel cupiditate, iusto neque, corrupti ex voluptatum unde soluta sunt asperiores commodi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis veritatis, dolor labore enim, obcaecati itaque ad sed placeat nemo maiores quo a at expedita alias laboriosam tenetur recusandae repellendus dolorem.</p>
+        </div>
+        <div id="polamaluMainGif">
+            <img src="../Imagenes/gifPolamalu.gif" alt="gif de Polamalu saltando la línea" class="img-fluid" id="polamaluGif">
+        </div>
+        <div id="polamaluSegundoTexto">
+            <!--Breve descripción de jugadas por las que es reconocido y por qué me gusta como jugador-->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed expedita fugiat voluptatibus ipsam itaque magni placeat architecto nisi quas voluptas animi harum corporis sapiente dignissimos qui, incidunt temporibus optio! Nisi!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis perspiciatis dicta nemo totam sunt sed delectus nostrum, praesentium consectetur consequuntur impedit libero quae obcaecati commodi? Porro nihil delectus inventore. Explicabo!</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerContactos">
+            <!--Contenedor para información de contacto-->
+            <h2>Información</h2>
+            <!--Listado con los contactos-->
+            <ul class="contactosListado">
+                <li>Dirección: Calle 111</li>
+                <li>Teléfono: 99999999</li>
+                <li>Mail: contacto@mail.com</li>
+            </ul>
+        </div>
+        <div class="footerRedes">
+            <!--Contenedor para Redes Sociales, con con logo y enlaces a las redes oficiales-->
+            <a href="https://www.instagram.com/steelers/">
+                <img src="../Imagenes/instagramLogo.png" alt="Logo de Instagram" class="footerRedesImg">
+            </a>
+            <a href="https://twitter.com/steelers?lang=es">
+                <img src="../Imagenes/twitterLogo.png" alt="Logo de Twitter" class="footerRedesImg">
+            </a>
+            <a href="https://www.facebook.com/steelers/">
+                <img src="../Imagenes/facebookLogo.png" alt="Logo de Facebook" class="footerRedesImg">
+            </a>
+        </div>
+    </footer>
+
+    <!--Scrip de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

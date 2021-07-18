@@ -1,0 +1,49 @@
+/*Estilos particulares para la página "polamalu"*/
+
+/*Grilla para estructurar el contenido de la página*/
+#polamaluMain {
+    display: grid;
+    padding-right: 2%;
+    margin-bottom: 50px;
+    grid-template-columns: 40% 30% 25%;
+    grid-template-rows: 50px repeat(2, auto);
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-areas: "Titulo Titulo Titulo"
+                        "TextoPrimario TextoPrimario Imagen"
+                        "Gif TextoSecundario TextoSecundario";
+    align-items: center;
+
+    .mainTitulo {
+        grid-area: Titulo;
+        margin-bottom: 0px;
+    }
+}
+
+#polamaluPrimerTexto {
+    grid-area: TextoPrimario;
+}
+
+#polamaluMainCarrusel {
+    grid-area: Imagen;
+    width: 100%;
+}
+
+#polamaluMainGif {
+    grid-area: Gif;
+    width: 100%;
+}
+
+#polamaluSegundoTexto {
+    grid-area: TextoSecundario;
+}
+
+@media screen and (max-width: 600px) {
+    #polamaluMain {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 5%;
+        padding-right: 0%;
+        align-self: center;
+    }
+}

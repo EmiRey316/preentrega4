@@ -1,0 +1,41 @@
+/*Estilos particulares para la página "contacto"*/
+#contactoMain {
+    color: $negro;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+
+    section {
+        padding-top: 40px;
+    }
+
+    /*Estilo particular para el form de esta página*/
+    form {
+        background-color: $gris;
+        padding: 20px;
+        border-radius: 10px;
+
+        input {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.form-switch {
+    label {
+        margin-bottom: 0px;
+        vertical-align: middle;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contactoMain {
+        flex-direction: column;
+        width: 90%;
+        align-self: center;
+
+        section {
+            padding-top: 0px;
+        }
+    }
+}

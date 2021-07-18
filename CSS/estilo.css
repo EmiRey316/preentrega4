@@ -1,0 +1,331 @@
+@charset "UTF-8";
+/*Estilos generales del sitio e imports del resto de archivos .scss. Este archvio será compilado en css*/
+/*Imports del resto de archivos con estilos particulares*/
+/*Variables con colores de la paleta*/
+/*Estilos para el menú superior o navegador del sitio*/
+header {
+  background: linear-gradient(0deg, #000 0%, #FFC20E 20%);
+  margin-bottom: 50px; }
+
+/*Estilo del navegador del menú superior*/
+.navbar {
+  margin: 0px;
+  padding: 0px; }
+
+/*Contenedor con el logo*/
+.navbar-brand {
+  margin-left: 25px;
+  padding: 0px; }
+
+.navbar-nav, .navbar-toggler {
+  margin-right: 4%; }
+
+#navbarNav {
+  margin-left: 10%; }
+
+/*Clase para dar estilo a la imagen que sirve como logo en el Menú*/
+.menuLogo {
+  width: 230px;
+  height: auto;
+  vertical-align: middle; }
+
+/*Estilo para los enlaces a las distintas páginas del sitio, en el navegador*/
+.nav-link {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  /*!important para matar el estilo traido por Bootstrap*/
+  color: #000 !important;
+  padding: 3px 0px;
+  font-weight: bold; }
+
+/*Estilo para los enlaces a las distintas páginas del sitio, en el navegador*/
+.nav-link:hover {
+  /*!important para matar el estilo anterior*/
+  color: #A5ACAF !important;
+  border-bottom: #A5ACAF 1px solid;
+  transition: 0.3s; }
+
+/*Estilo para los li del navegador*/
+.nav-item {
+  text-align: center;
+  padding: 0px;
+  margin: 10px 0px; }
+
+/*Estilos para el footer del sitio*/
+footer {
+  background: linear-gradient(#000, #1a1a1a);
+  color: lightgrey;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.footerContactos {
+  width: 30%;
+  margin-left: 3%;
+  /*Estilo para el título del contenedor de contactos*/ }
+  .footerContactos h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 4% 0px; }
+
+/*Estilo del contenedor con las redes*/
+.footerRedes {
+  margin-right: 30px;
+  display: flex;
+  width: 30%;
+  justify-content: space-evenly; }
+
+.footerRedesImg {
+  width: 36px;
+  height: auto; }
+
+/*Clase para dar estilo al listado de contactos*/
+.contactosListado {
+  font-style: italic; }
+
+@media screen and (max-width: 600px) {
+  footer {
+    flex-direction: column; }
+  .footerContactos, .footerRedes {
+    width: 80%;
+    text-align: center;
+    margin: 0px 0px 25px 0px; }
+  .contactosListado {
+    padding: 0px; } }
+
+/*Estilos particulares para la página "home"*/
+#homeMain {
+  margin-right: 50px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 50px 250px;
+  grid-template-areas: "Titulo Imagen" "Parrafo Imagen";
+  column-gap: 20px;
+  align-items: center; }
+  #homeMain .mainTitulo {
+    grid-area: Titulo; }
+
+.homeMainText {
+  grid-area: Parrafo; }
+
+/*Contener donde se ubica la Imagen principal del Home*/
+.homeMainImg {
+  grid-area: Imagen; }
+
+/*Estilo a la imagen principal en Home*/
+#imagenPresentacion {
+  animation: fadeInFromBottom;
+  animation-duration: 1.5s; }
+
+@keyframes fadeInFromBottom {
+  from {
+    transform: translateY(50%);
+    opacity: 0%; } }
+
+@media screen and (max-width: 600px) {
+  #homeMain {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 5%;
+    align-self: center; }
+    #homeMain .homeMainText {
+      order: 2; } }
+
+/*Estilos particulares para la página "Plantel"*/
+.tablaPlantel {
+  color: #000;
+  width: 80%;
+  border-collapse: collapse;
+  border: #000 solid 1.5px;
+  margin-bottom: 50px;
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  caption-side: top;
+  /*Estilo para dar el formato de "zebra" a la tabla*/
+  /*Estilo para la primer columna de cada tabla*/
+  /*Estilo para el título de cada tabla*/ }
+  .tablaPlantel tr:nth-child(odd) {
+    background-color: #e7e7e7; }
+  .tablaPlantel th {
+    font-size: 20px;
+    padding: 8px 20px;
+    width: 25%;
+    text-align: left; }
+  .tablaPlantel td {
+    font-size: 16px;
+    padding: 8px 20px;
+    width: 25%; }
+  .tablaPlantel td:first-child, .tablaPlantel th:first-child {
+    font-weight: bold;
+    border-right: #000 solid 0.5px; }
+  .tablaPlantel caption {
+    color: #000;
+    border: #000 solid 2px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: none;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    padding: 8px 0px 8px 45px;
+    background-color: #FFC20E; }
+
+@media screen and (max-width: 600px) {
+  .tablaPlantel {
+    width: 100%; }
+    .tablaPlantel th {
+      font-size: 14px;
+      padding: 4px 10px; }
+    .tablaPlantel td {
+      font-size: 11px;
+      padding: 4px 10px; } }
+
+/*Estilos particulares para la página "polamalu"*/
+/*Grilla para estructurar el contenido de la página*/
+#polamaluMain {
+  display: grid;
+  padding-right: 2%;
+  margin-bottom: 50px;
+  grid-template-columns: 40% 30% 25%;
+  grid-template-rows: 50px repeat(2, auto);
+  column-gap: 20px;
+  row-gap: 20px;
+  grid-template-areas: "Titulo Titulo Titulo" "TextoPrimario TextoPrimario Imagen" "Gif TextoSecundario TextoSecundario";
+  align-items: center; }
+  #polamaluMain .mainTitulo {
+    grid-area: Titulo;
+    margin-bottom: 0px; }
+
+#polamaluPrimerTexto {
+  grid-area: TextoPrimario; }
+
+#polamaluMainCarrusel {
+  grid-area: Imagen;
+  width: 100%; }
+
+#polamaluMainGif {
+  grid-area: Gif;
+  width: 100%; }
+
+#polamaluSegundoTexto {
+  grid-area: TextoSecundario; }
+
+@media screen and (max-width: 600px) {
+  #polamaluMain {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 5%;
+    padding-right: 0%;
+    align-self: center; } }
+
+/*Estilos particulares para la página "galería"*/
+/*Grilla para la parte de imagenes de la galería*/
+.galeriaImagenes, .galeriaVideos {
+  display: grid;
+  width: 100%;
+  margin-bottom: 100px;
+  grid-template: 50px repeat(2, auto)/repeat(4, 1fr);
+  column-gap: 1.5%;
+  row-gap: 5%; }
+  .galeriaImagenes .mainTitulo, .galeriaVideos .mainTitulo {
+    grid-column: 1 / 5; }
+
+/*Estilo para imagenes de la galería, con animación de animate.css*/
+.imgPequeñaGalería {
+  animation: zoomIn;
+  animation-duration: 2s;
+  width: 100%; }
+
+/*Estilos para los videos de la página galeria, se quita de momento porque resultaron muy pesados para el sitio*/
+.galeriaVideos {
+  grid-template: 50px auto/repeat(3, 1fr); }
+  .galeriaVideos .mainTitulo {
+    grid-column: 1 / 4; }
+
+/*Estilos para los modals o "Zoom" de las imagenes*/
+.modal-content {
+  position: relative; }
+  .modal-content button {
+    position: absolute;
+    top: 1em;
+    right: 1em; }
+
+@media screen and (max-width: 600px) {
+  .galeriaImagenes, .galeriaVideos, .galeriaVideos {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px; }
+    .galeriaImagenes img, .galeriaVideos img, .galeriaImagenes video, .galeriaVideos video, .galeriaVideos img, .galeriaVideos video {
+      max-width: 85%;
+      align-self: center; }
+  #galeriaMain .mainTitulo {
+    padding-left: 15%; } }
+
+/*Estilos particulares para la página "contacto"*/
+#contactoMain {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  /*Estilo particular para el form de esta página*/ }
+  #contactoMain section {
+    padding-top: 40px; }
+  #contactoMain form {
+    background-color: #A5ACAF;
+    padding: 20px;
+    border-radius: 10px; }
+    #contactoMain form input {
+      margin-bottom: 15px; }
+
+.form-switch label {
+  margin-bottom: 0px;
+  vertical-align: middle; }
+
+@media screen and (max-width: 600px) {
+  #contactoMain {
+    flex-direction: column;
+    width: 90%;
+    align-self: center; }
+    #contactoMain section {
+      padding-top: 0px; } }
+
+/*Estilo general para el cuerpo de las páginas*/
+body {
+  margin: 0px;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh; }
+
+main {
+  margin: 0% 2%; }
+
+/*Estilo general para las listas*/
+ul {
+  list-style: none; }
+
+/*Estilo para quitar el padding a los contenedores de bootstrap*/
+.container-fluid, .container {
+  padding: 0px; }
+
+/*Estilo para todos los títulos de las páginas, que tendrán el mismo formato*/
+.mainTitulo {
+  font-family: 'Mate SC', serif;
+  font-size: 36px;
+  color: black;
+  font-weight: bold;
+  margin: 0px 0px 24px 5%; }
+
+@media screen and (max-width: 600px) {
+  .mainTitulo {
+    font-size: 28px; } }
+
+/*Estilo para todos los párrafos de las páginas, que tendrán el mismo formato*/
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  margin: 16px 0px; }
