@@ -13,6 +13,7 @@ footer {
 .footerContactos {
     width: 30%;
     margin-left: 3%;
+    grid-area: Contacto;
 
     /*Estilo para el título del contenedor de contactos*/
     h2 {
@@ -24,6 +25,7 @@ footer {
 
 /*Estilo del contenedor con las redes*/
 .footerRedes {
+    grid-area: Redes;
     margin-right: 30px;
     display: flex;
     width: 30%;

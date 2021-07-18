@@ -65,6 +65,7 @@ footer {
 .footerContactos {
   width: 30%;
   margin-left: 3%;
+  grid-area: Contacto;
   /*Estilo para el título del contenedor de contactos*/ }
   .footerContactos h2 {
     font-size: 24px;
@@ -73,6 +74,7 @@ footer {
 
 /*Estilo del contenedor con las redes*/
 .footerRedes {
+  grid-area: Redes;
   margin-right: 30px;
   display: flex;
   width: 30%;
@@ -101,15 +103,18 @@ footer {
   margin-right: 50px;
   display: grid;
   grid-template-columns: 70% 30%;
-  grid-template-rows: 50px 250px;
-  grid-template-areas: "Titulo Imagen" "Parrafo Imagen";
+  grid-template-rows: 50px auto auto;
+  grid-template-areas: "Titulo Titulo" "Parrafo1 Imagen" "Parrafo2 Imagen";
   column-gap: 20px;
   align-items: center; }
   #homeMain .mainTitulo {
     grid-area: Titulo; }
 
-.homeMainText {
-  grid-area: Parrafo; }
+#primerParrafoHome {
+  grid-area: Parrafo1; }
+
+#segundoParrafoHome {
+  grid-area: Parrafo2; }
 
 /*Contener donde se ubica la Imagen principal del Home*/
 .homeMainImg {
@@ -125,12 +130,21 @@ footer {
     transform: translateY(50%);
     opacity: 0%; } }
 
+/*Media Query para tablets y móviles en horizontal*/
+@media screen and (max-width: 992px) {
+  #homeMain {
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "Titulo Titulo" "Parrafo1 Imagen" "Parrafo2 Parrafo2"; } }
+
+/*Media Query para dispositivos móviles*/
 @media screen and (max-width: 600px) {
   #homeMain {
     display: flex;
     flex-direction: column;
     margin: 0px 5%;
     align-self: center; }
+    #homeMain .mainTitulo {
+      margin-left: 0px; }
     #homeMain .homeMainText {
       order: 2; } }
 
@@ -253,12 +267,25 @@ footer {
     top: 1em;
     right: 1em; }
 
+/*Media Query para tablets y móviles en horizontal*/
+@media screen and (max-width: 992px) {
+  .galeriaImagenes, .galeriaVideos {
+    margin-bottom: 150px;
+    grid-template: 50px repeat(4, auto)/repeat(2, 1fr);
+    row-gap: 2.5%; }
+    .galeriaImagenes .mainTitulo, .galeriaVideos .mainTitulo {
+      grid-column: 1 / 3; }
+    .galeriaImagenes #contenedorVideo1, .galeriaVideos #contenedorVideo1 {
+      grid-column: 1 / 3; } }
+
+/*Media Query para dispositivos móviles*/
 @media screen and (max-width: 600px) {
   .galeriaImagenes, .galeriaVideos, .galeriaVideos {
     display: flex;
     flex-direction: column;
-    row-gap: 15px; }
-    .galeriaImagenes img, .galeriaVideos img, .galeriaImagenes video, .galeriaVideos video, .galeriaVideos img, .galeriaVideos video {
+    row-gap: 15px;
+    margin-bottom: 50px; }
+    .galeriaImagenes img, .galeriaVideos img, .galeriaImagenes .contenedorVideo, .galeriaVideos .contenedorVideo, .galeriaVideos img, .galeriaVideos .contenedorVideo {
       max-width: 85%;
       align-self: center; }
   #galeriaMain .mainTitulo {

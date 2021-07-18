@@ -45,13 +45,35 @@
 }
 
 
+/*Media Query para tablets y móviles en horizontal*/
+@media screen and (max-width: 992px) {
+    .galeriaImagenes {
+        margin-bottom: 150px;
+        grid-template: 50px repeat(4, auto) /
+                        repeat(2, 1fr);
+        row-gap: 2.5%;
+    
+        .mainTitulo {
+            grid-column: 1 / 3;
+        }
+
+        #contenedorVideo1 {
+            grid-column: 1 / 3;
+        }
+    }
+}
+
+
+/*Media Query para dispositivos móviles*/
 @media screen and (max-width: 600px) {
     .galeriaImagenes, .galeriaVideos {
         display: flex;
         flex-direction: column;
         row-gap: 15px;
+        margin-bottom: 50px;
 
-        img, video {
+
+        img, .contenedorVideo {
             max-width: 85%;
             align-self: center;
         }
